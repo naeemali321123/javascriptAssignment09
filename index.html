@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JS Assignment-09</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>
+            Saylani Mass Training IT-Program----Web & Mobile App Development Course<br> JavaScript Assignment-09
+        </h1>
+        <!-- 1. Write a js program to read and print elements of array. -->
+        <H2>
+            Program # 01: <br><br> Write a js program to read and print elements of array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    <b> Array Elements is: </b>
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q01ClearResultScreen()">
+                </form>
+                <H1 id="q01ResultScreen">
+
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="printArrayElements()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+
+        <!-- 2. Write a js program to print all negative elements in an array. -->
+
+        <H2>
+            Program # 02: <br><br> Write a js program to print all negative elements in an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    <pre> <b> Array Elements is: [1,-2,3,-4,5,-6,7,-8,9,-10,11,-12,13,-14,15] </b></pre>
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q02ClearResultScreen()">
+                </form>
+                <H1 id="q02ResultScreen">
+                    Negative Elements is:
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findNegativeElementsIntoArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+
+        <!-- 3. Write a js program to find sum of all array elements.  -->
+
+        <H2>
+            Program # 03: <br><br> Write a js program to find sum of all array elements. 
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    <pre> <b id="numbersArray"> The Array is: [1,  22,  35,  24,  55,  26,  75,  28,  95,  210,  511,  212,  513,  214,  515] </b></pre>
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q03ClearResultScreen()">
+                </form>
+                <H1 id="q03ResultScreen">
+                    Sum of Array Numbers is: 
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="sumAllArrayNumbers()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 4. Write a js program to check whether a number is divisible by 5 and 11 or not. -->
+        <H2>
+            Program # 04: <br><br> Write a js program to check whether a number is divisible by 5 and 11 or not.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <form action="">
+                    <input id="q04Num1" type="number" placeholder="Enter Any Number"><br>
+
+                    <input type="reset" onclick="q04ClearResultScreen()">
+                </form>
+                <H1 id="q04ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="divisibleOrNotBy5And11()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 5. Write a js program to check whether a number is even or odd. -->
+        <H2>
+            Program # 05: <br><br> Write a js program to check whether a number is even or odd.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <form action="">
+                    <input id="q05Num1" type="number" placeholder="Enter Any Number"><br>
+
+                    <input type="reset" onclick="q05ClearResultScreen()">
+                </form>
+                <H1 id="q05ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="evenOrOddNumber()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 6. Write a js program to check whether a year is leap year or not. -->
+        <H2>
+            Program # 06: <br><br> Write a js program to check whether a year is leap year or not.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <form action="">
+                    <input id="q06Num1" type="number" placeholder="Enter Any Number"><br>
+
+                    <input type="reset" onclick="q06ClearResultScreen()">
+                </form>
+                <H1 id="q06ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="checkLeapYear()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 7. Write a js program to check whether a character is alphabet or not. -->
+        <H2>
+            Program # 07: <br><br> Write a js program to check whether a character is alphabet or not.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <form action="">
+                    <input id="q07Num1" type="text" placeholder="Enter Any character" maxlength="1"><br>
+
+                    <input type="reset" onclick="q07ClearResultScreen()">
+                </form>
+                <H1 id="q07ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="checkCharacter4alphabet()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 08. Write a js program to input any alphabet and check whether it is vowel or consonant. -->
+        <H2>
+            Program # 08: <br><br> Write a js program to input any alphabet and check whether it is vowel or consonant.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <form action="">
+                    <input id="q08Num1" type="text" pattern="[A-Za-z]{1}" maxlength="1"
+                        placeholder="Enter Any Alphabet"><br>
+
+                    <input type="reset" onclick="q08ClearResultScreen()">
+                </form>
+                <H1 id="q08ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="checkAlphabet4VowelAndConsonant()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 09. Write a js program to input any character and check whether it is alphabet, digit or special character. -->
+        <H2>
+            Program # 09: <br><br> Write a js program to input any character and check whether it is alphabet, digit or
+            special character.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <form action="">
+                    <input id="q09Num1" type="text" maxlength="1" placeholder="Enter Any Number"><br>
+
+                    <input type="reset" onclick="q09ClearResultScreen()">
+                </form>
+                <H1 id="q09ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="checkCharacterTypeOf()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 10. Write a js program to check whether a character is uppercase or lowercase alphabet -->
+        <H2>
+            Program # 10: <br><br> Write a js program to check whether a character is uppercase or lowercase alphabet
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <form action="">
+                    <input id="q10Num1" type="text" pattern="[A-Za-z]{1}" maxlength="1"
+                        placeholder="Enter Any Number"><br>
+
+                    <input type="reset" onclick="q10ClearResultScreen()">
+                </form>
+                <H1 id="q10ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="checkCharacter4LowercaseAndUppercase()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 11. Write a js program to input week number and print week day. -->
+        <H2>
+            Program # 11: <br><br> Write a js program to input week number and print week day.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <form action="">
+                    <input id="q11Num1" type="number" maxlength="1" placeholder="Enter Any Week Number"><br>
+
+                    <input type="reset" onclick="q11ClearResultScreen()">
+                </form>
+                <H1 id="q11ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="checkWeekDayByNumber()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 12. Write a js program to input month number and print number of days in that month. -->
+        <H2>
+            Program # 12: <br><br> Write a js program to input month number and print number of days in that month.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <form action="">
+                    <input id="q12Num1" type="number" placeholder="Enter Any Number"><br>
+
+                    <input type="reset" onclick="q12ClearResultScreen()">
+                </form>
+                <H1 id="q12ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findMonthDay()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 13. Write a js program to count total number of notes in given amount. -->
+        <H2>
+            Program # 13: <br><br> Write a js program to count total number of notes in given amount.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <form action="">
+                    <input id="q13Num1" type="number" placeholder="Enter Any Number"><br>
+
+                    <input type="reset" onclick="q13ClearResultScreen()">
+                </form>
+                <div id="q13ResultScreen">
+                    <div id="tableHeading" class="tdPadding">Notes </div>
+                    <div id="tableHeading" class="tdPadding">Denomination </div>
+                    <div id="tableHeading" class="tdPadding">Total </div>
+                    <div id="noteTitle" class="tdPadding">5000 </div>
+                    <div id="notes5000" class=" reset tdPadding"> Result </div>
+                    <div id="totalOf5000" class=" reset tdPadding"> Result </div>
+                    <div id="noteTitle" class="tdPadding">1000 </div>
+                    <div id="notes1000" class=" reset tdPadding"> Result </div>
+                    <div id="totalOf1000" class=" reset tdPadding"> Result </div>
+                    <div id="noteTitle" class="tdPadding">500 </div>
+                    <div id="notes500" class=" reset tdPadding"> Result </div>
+                    <div id="totalOf500" class=" reset tdPadding"> Result </div>
+                    <div id="noteTitle" class="tdPadding">100 </div>
+                    <div id="notes100" class=" reset tdPadding"> Result </div>
+                    <div id="totalOf100" class=" reset tdPadding"> Result </div>
+                    <div id="noteTitle" class="tdPadding">50 </div>
+                    <div id="notes50" class=" reset tdPadding"> Result </div>
+                    <div id="totalOf50" class=" reset tdPadding"> Result </div>
+                    <div id="noteTitle" class="tdPadding">20 </div>
+                    <div id="notes20" class=" reset tdPadding"> Result </div>
+                    <div id="totalOf20" class=" reset tdPadding"> Result </div>
+                    <div id="noteTitle" class="tdPadding">10 </div>
+                    <div id="notes10" class=" reset tdPadding"> Result </div>
+                    <div id="totalOf10" class=" reset tdPadding"> Result </div>
+                    <div id="noteTitle" class="tdPadding">5 </div>
+                    <div id="notes5" class=" reset tdPadding"> Result </div>
+                    <div id="totalOf5" class=" reset tdPadding"> Result </div>
+                    <div id="noteTitle" class="tdPadding">2 </div>
+                    <div id="notes2" class=" reset tdPadding"> Result </div>
+                    <div id="totalOf2" class=" reset tdPadding"> Result </div>
+                    <div id="noteTitle" class="tdPadding">1 </div>
+                    <div id="notes1" class=" reset tdPadding"> Result </div>
+                    <div id="totalOf1" class=" reset tdPadding"> Result </div>
+                    <div id="grandTotalTitle" class="tdPadding">Grand Total </div>
+                    <div id="grandTotal" class="tdPadding">Null </div>
+                </div>
+            </div>
+            <button id="actionPerformBtn" onclick="checkNumberOfNote()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 14. Write a js program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following:
+            Percentage >= 90% : Grade A
+            Percentage >= 80% : Grade B
+            Percentage >= 70% : Grade C
+            Percentage >= 60% : Grade D
+            Percentage >= 40% : Grade E
+            Percentage < 40% : Grade F -->
+        <H2>
+            Program # 14: <br><br> Write a js program to input marks of five subjects Physics, Chemistry, Biology,
+            Mathematics and Computer. Calculate percentage and grade according to following: <br>
+            <pre>
+            Percentage >= 90% : Grade A     Percentage >= 80% : Grade B
+            Percentage >= 70% : Grade C     Percentage >= 60% : Grade D
+            Percentage >= 40% : Grade E     Percentage < 40% : Grade F
+        </pre>
+        </H2>
+        <div class="tdPadding" id="jsProgramSection">
+            <div id="userValue">
+                <form action="">
+                    <input id="q14Num1" type="number" min="0" max="100" placeholder="Physics marks">
+                    <input id="q14Num2" type="number" min="0" max="100" placeholder="Chemistry marks">
+                    <input id="q14Num3" type="number" min="0" max="100" placeholder="Biology marks">
+                    <input id="q14Num4" type="number" min="0" max="100" placeholder="Mathematics marks">
+                    <input id="q14Num5" type="number" min="0" max="100" placeholder="Computer marks"><br>
+
+                    <input type="reset" onclick="q14ClearResultScreen()">
+                </form>
+                <H1 id="q14ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="checkGrade()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+
+        <!--15. Write a js program to input basic salary of an employee and calculate its Gross salary according to following:
+Basic Salary <= 10000 : HRA = 20%, DA = 80%
+Basic Salary <= 20000 : HRA = 25%, DA = 90%
+Basic Salary > 20000 : HRA = 30%, DA = 95%
+        -->
+        <H2>
+            Program # 15: <br><br> Write a js program to input basic salary of an employee and calculate its Gross
+            salary according to following:
+            <pre>
+            Basic Salary <= 10000 : HRA = 20%, DA = 80%
+            Basic Salary <= 20000 : HRA = 25%, DA = 90%
+            Basic Salary > 20000 : HRA = 30%, DA = 95%</pre>
+
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <form action="">
+                    <input id="q15Num1" type="number" placeholder="Enter Your Basic Salary"><br>
+
+                    <input type="reset" onclick="q15ClearResultScreen()">
+                </form>
+                <H1 id="q15ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findGrossSalary()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!--16. Write a js program to input electricity unit charges and calculate total electricity bill according to the given condition:
+    For first 50 units Rs. 0.50/unit
+    For next 100 units Rs. 0.75/unit
+    For next 100 units Rs. 1.20/unit
+    For unit above 250 Rs. 1.50/unit
+    An additional surcharge of 20% is added to the bill
+    Deadline: 08/12/2021! -->
+
+        <H2>
+            Program # 16: <br><br> Write a js program to input electricity unit charges and calculate total electricity
+            bill according to the given condition:
+            <pre>
+            For first 50 units Rs. 0.50/unit
+            For next 100 units Rs. 0.75/unit
+            For next 100 units Rs. 1.20/unit
+            For unit above 250 Rs. 1.50/unit
+            An additional surcharge of 20% is added to the bill
+            Deadline: 08/12/2021!</pre>
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <form action="">
+                    <label for=""><b>Units :</b></label>
+                    <input id="q16Num1" type="number" placeholder="Enter Electricity Units"><br>
+
+                    <input type="reset" onclick="q16ClearResultScreen()">
+                </form>
+                <H1 id="q16ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findTotalElectricityBill()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</html>

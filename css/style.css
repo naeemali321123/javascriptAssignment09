@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat-Regular;
+}
+
+#container {
+    text-align: center;
+    padding: 0px;
+    background: linear-gradient(to right, aqua, pink);
+}
+
+#container>h1 {
+    font-size: 22px;
+    padding: 100px auto;
+    background-color: rgb(168, 4, 168);
+    color: white;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
+
+#container h2 {
+    text-align: left;
+    padding: 100px 50px 50px 50px;
+}
+
+#container hr {
+    border: 1px solid black;
+}
+
+#jsProgramSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+    text-align: left;
+}
+
+#jsProgramSection h2 {
+    padding: 15px;
+}
+
+#jsProgramSection form {
+    text-align: center;
+}
+
+#jsProgramSection form input {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 30px;
+    margin: 10px;
+}
+
+#jsProgramSection form input::placeholder {
+    font-size: 16px;
+}
+
+#userValue {
+    text-align: center;
+}
+
+#userValue h1 {
+    font-size: 22px;
+    margin: 20px 0px;
+    padding: 40px;
+    color: rgb(165, 1, 165);
+    border: 2px solid black;
+    box-shadow: 2px 5px 12px rgba(0, 0, 0, .50);
+}
+
+#actionPerformBtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 200px;
+    border-radius: 100px;
+    color: red;
+    box-shadow: 2px 5px 12px rgba(0, 0, 0, .50);
+}
+#q13ResultScreen{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 7%;
+}
+.tdPadding{
+    padding: 3px 30px;
+    border: 1px solid black;
+    box-shadow: 0 2 5 rgba(0, 0, 0, .30);
+}
+#grandTotalTitle{
+    display: grid;
+    grid-column: 1/3;
+    padding: 10px 0px;
+    font-size: 24px;
+}
+#grandTotal, #tableHeading{
+    font-size: 24px;
+    padding: 10px 0px;
+
+}
