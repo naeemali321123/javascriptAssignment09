@@ -42,6 +42,7 @@ function q16ClearResultScreen() { document.getElementById("q16ResultScreen").inn
 
 var computerAccessory = ["Mouse", "Keyboard", "Printer", "HeadPhone", "USB", "PowerSupply", "Porcessor", "RAM", "Hard", "And PowerCable"];
 var i = 0;
+
 function printArrayElements() {
     document.getElementById("q01ResultScreen").innerHTML += " " + computerAccessory[i];
     if (i > computerAccessory.length - 1) {
@@ -70,4 +71,20 @@ function sumAllArrayNumbers() {
         total = total + Numbers[i];
     }
     document.getElementById("q03ResultScreen").innerHTML = "Sum of Array Numbers is: " + total;
+}
+
+// 04. Write a js program to find maximum and minimum element in an array.
+function findMinMaxValueInArray() {
+    var Numbers = [41, -222, 35, 24, 55, -26, 755, 28, -95, 210, 511, 212, 513, 214, 515];
+    var maxNumber = Numbers[0];
+    var minNumber = Numbers[0];
+    for (let i = 0; i < Numbers.length; i++) {
+        if (Numbers[i] > maxNumber) {
+            maxNumber = Numbers[i];
+        }
+        if (Numbers[i] < minNumber) {
+            minNumber = Numbers[i];
+        }
+    }
+    document.getElementById("q04ResultScreen").innerHTML = "Max Number is: " + maxNumber + " Min Number is: " + minNumber;
 }
