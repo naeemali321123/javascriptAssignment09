@@ -88,3 +88,68 @@ function findMinMaxValueInArray() {
     }
     document.getElementById("q04ResultScreen").innerHTML = "Max Number is: " + maxNumber + " Min Number is: " + minNumber;
 }
+
+// 05. Write a js program to find second largest element in an array.
+function findSecondLargestElement() {
+    var Numbers = [41, -222, 35, 24, 55, -26, 755, 28, -95, 210, 511, 212, 513, 214, 515];
+    Numbers.sort( function(a,b){return a-b} );
+    document.getElementById("q05ResultScreen").innerHTML = "Second Largest Number is: " + Numbers[Numbers.length-2];
+}
+
+// 06. Write a js program to count total number of even and odd elements in an array.
+function findEvenAndOdenNumbers() {
+    var Numbers = [41, -222, 35, 24, 55, -26, 755, 28, -95, 210, 511, 212, 513, 214, 515];
+    var evenNumberArray = []
+    var oddNumberArray = [];
+    odd = 0
+    even = 0
+    for (let i = 0; i < Numbers.length; i++) {
+       var evenAndOden = Numbers[i] % 2;
+        if (evenAndOden == 0) {
+           evenNumberArray[even] = Numbers[i]
+           even++
+        }
+        else{
+            oddNumberArray[odd] = Numbers[i]
+            odd++
+        }
+    }
+    document.getElementById("q06ResultScreen").innerHTML = "The Even Number Array is: " + evenNumberArray + ":<br> Total Even Numbers are " + even + ":<br> And Odd Number Array is: " + oddNumberArray + ":<br> Total Odd Numbers are " + odd;
+}
+// 07. write a js program to count total number of negative elements in an array.
+function findAndCountNegativeNumbers() {
+    var Numbers = [41, -222, 35, 24, 55, -26, 755, 28, -95, 210, 511, -212, 513, 214, -515];
+    totalNegativeNumber = 0
+    for (let i = 0; i < Numbers.length; i++) {
+        if (Numbers[i] < 0) {
+            totalNegativeNumber++
+        }
+    }
+    document.getElementById("q07ResultScreen").innerHTML = "Total Negative Number is: " + totalNegativeNumber;
+}
+// 08. Write a js program to copy all elements from an array to another array.
+function copyElementToAnotherArray() {
+    var numbers = [41, -222, 35, 24, 55, -26, 755, 28, -95, 210, 511, -212, 513, 214, -515];
+    var anotherArray = [];
+    for (let i = 0; i < numbers.length; i++) {
+        anotherArray[i] = numbers[i]
+    }
+    document.getElementById("q08ResultScreen").innerHTML = " The another Array Elements is: " + anotherArray;
+}
+// 09. Write a js program to insert an element in an array.
+function insertElement() {
+    var inputElement = document.getElementById("q09Num1").value;
+    var numbers = [41, -222, 35, 24, 55, -26, 755, 28, -95, 210, 511, -212, 513, 214, -515];
+    numbers.push(inputElement);
+    document.getElementById("q09ResultScreen").innerHTML = "The current Array Elements is: " + numbers;
+}
+// 10. Write a js program to delete an element from an array at specified position.
+function deleteElement() {
+    var inputElement = document.getElementById("q10Num1").value;
+    var numbers = [41,-222,35,24,55,-26,755,28,-95,210,511,-212,513,214,-515];
+    var index = numbers.indexOf(inputElement);
+    if (index > -1) {
+        numbers.splice(index, index + 1);
+    }
+    document.getElementById("q10ResultScreen").innerHTML = "The current Array Elements is: " + numbers + index;
+}
