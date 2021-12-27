@@ -92,8 +92,8 @@ function findMinMaxValueInArray() {
 // 05. Write a js program to find second largest element in an array.
 function findSecondLargestElement() {
     var Numbers = [41, -222, 35, 24, 55, -26, 755, 28, -95, 210, 511, 212, 513, 214, 515];
-    Numbers.sort( function(a,b){return a-b} );
-    document.getElementById("q05ResultScreen").innerHTML = "Second Largest Number is: " + Numbers[Numbers.length-2];
+    Numbers.sort(function (a, b) { return a - b });
+    document.getElementById("q05ResultScreen").innerHTML = "Second Largest Number is: " + Numbers[Numbers.length - 2];
 }
 
 // 06. Write a js program to count total number of even and odd elements in an array.
@@ -104,12 +104,12 @@ function findEvenAndOdenNumbers() {
     odd = 0
     even = 0
     for (let i = 0; i < Numbers.length; i++) {
-       var evenAndOden = Numbers[i] % 2;
+        var evenAndOden = Numbers[i] % 2;
         if (evenAndOden == 0) {
-           evenNumberArray[even] = Numbers[i]
-           even++
+            evenNumberArray[even] = Numbers[i]
+            even++
         }
-        else{
+        else {
             oddNumberArray[odd] = Numbers[i]
             odd++
         }
@@ -146,10 +146,27 @@ function insertElement() {
 // 10. Write a js program to delete an element from an array at specified position.
 function deleteElement() {
     var inputElement = document.getElementById("q10Num1").value;
-    var numbers = [41,-222,35,24,55,-26,755,28,-95,210,511,-212,513,214,-515];
-    var index = numbers.indexOf(inputElement);
+    var numbers = [41, -222, 35, 24, 55, -26, 755, 28, -95, 210, 511, -212, 513, 214, -515];
+    var index = numbers.indexOf(parseInt(inputElement));
     if (index > -1) {
-        numbers.splice(index, index + 1);
+        numbers.splice(index, 1);
+        updatedArray = numbers
     }
-    document.getElementById("q10ResultScreen").innerHTML = "The current Array Elements is: " + numbers + index;
+    document.getElementById("q10ResultScreen").innerHTML = "The current Array Elements is: " + updatedArray;
 }
+// 11. Write a js program to count frequency of each element in an array.
+function countFrequancyElements() {
+    var numbers = [25, 30, 35, 24, 35, 210, 25, 28, 30, 210, 511, 35, 513, 28, 30];
+    // numbers.map(frequancy => {
+    //     var index = numbers.indexOf(parseInt(numbers[i]));
+    //     return
+
+    // });
+    // if (index > -1) {
+    //     numbers.splice(index, 1);
+    //     updatedArray = numbers
+    // }
+    document.getElementById("q11ResultScreen").innerHTML = "Count Frequancy of Each Elements is Given below:<br>" + frequancy;
+}
+
+
