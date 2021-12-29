@@ -166,3 +166,36 @@ function countFrequancyElements() {
     });
     document.getElementById("q11ResultScreen").innerHTML = " Frequancy of " + userInput + " is: " + count;
 }
+// 12. Write a js program to print all unique elements in the array.
+function findUniqueElements() {
+    var numbers = [41, 35, 24, 55, 755, 24, 210, 55, 35, 41];
+    for (let i = 0; i < numbers.length; i++) {
+        j =  i + 1
+        for ( j; j < numbers.length; j++) {
+            if (numbers[i] == numbers[j]) {
+                numbers.splice(j, 1)
+            }  
+        }
+    }
+    document.getElementById("q12ResultScreen").innerHTML = "Unique Elements Array is: " + numbers;
+}
+// 13.Write a js program to count total number of duplicate elements in an array.
+function countTotalNumberOfDuplicateElements() {
+    var numbers = [41, 35, 24, 55, 755, 24, 24, 210,41, 55, 35, 41];
+    totalDuplicateElements = 0;
+    count = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        j =  i + 1
+        for ( j; j < numbers.length; j++) {
+            if (numbers[i] == numbers[j]) {
+                numbers.splice(j, 1);
+                count++;
+            }  
+        }
+        if(count > 0){
+            totalDuplicateElements++
+            count = 0;
+        }
+    }
+    document.getElementById("q13ResultScreen").innerHTML = "Total Number Of Duplicate Elements is: " + totalDuplicateElements;
+}
