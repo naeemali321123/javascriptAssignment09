@@ -279,118 +279,218 @@
                     [41, 35, 24, 55, 755, 24, 24, 210, 55, 35, 41]
                 </h1>
                 <form action="">
-                    <input id="q13Num1" type="number" placeholder="Enter Any Number"><br>
                     <input type="reset" onclick="q13ClearResultScreen()">
                 </form>
-                <div id="q13ResultScreen">
+                <h1 id="q13ResultScreen">
                     Result Screen
-                </div>
+                </h1>
             </div>
             <button id="actionPerformBtn" onclick="countTotalNumberOfDuplicateElements()">
                 Action Perform
             </button>
         </div>
         <hr>
-        <!-- 14. Write a js program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following:
-            Percentage >= 90% : Grade A
-            Percentage >= 80% : Grade B
-            Percentage >= 70% : Grade C
-            Percentage >= 60% : Grade D
-            Percentage >= 40% : Grade E
-            Percentage < 40% : Grade F -->
+        <!-- 14. Write a js program to delete all duplicate elements from an array. -->
         <H2>
-            Program # 14: <br><br> Write a js program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following: <br>
-            <pre>
-            Percentage >= 90% : Grade A     Percentage >= 80% : Grade B
-            Percentage >= 70% : Grade C     Percentage >= 60% : Grade D
-            Percentage >= 40% : Grade E     Percentage < 40% : Grade F
-        </pre>
+            Program # 14: <br><br> Write a js program to delete all duplicate elements from an array. <br>
         </H2>
-        <div class="tdPadding" id="jsProgramSection">
+        <div id="jsProgramSection">
             <div id="userValue">
-                <form action="">
-                    <input id="q14Num1" type="number" min="0" max="100" placeholder="Physics marks">
-                    <input id="q14Num2" type="number" min="0" max="100" placeholder="Chemistry marks">
-                    <input id="q14Num3" type="number" min="0" max="100" placeholder="Biology marks">
-                    <input id="q14Num4" type="number" min="0" max="100" placeholder="Mathematics marks">
-                    <input id="q14Num5" type="number" min="0" max="100" placeholder="Computer marks"><br>
+                <h1>
+                   Current Array is: [41, 35, 24, 55, 755, 24, 24, 210, 55, 35, 41];
+                </h1>
 
+                <form>
                     <input type="reset" onclick="q14ClearResultScreen()">
                 </form>
                 <H1 id="q14ResultScreen">
                     Result Screen
                 </H1>
             </div>
-            <button id="actionPerformBtn" onclick="checkGrade()">
+            <button id="actionPerformBtn" onclick="deleteDuplicateElements()">
                 Action Perform
             </button>
         </div>
         <hr>
 
-        <!--15. Write a js program to input basic salary of an employee and calculate its Gross salary according to following:
-Basic Salary <= 10000 : HRA = 20%, DA = 80%
-Basic Salary <= 20000 : HRA = 25%, DA = 90%
-Basic Salary > 20000 : HRA = 30%, DA = 95%
-        -->
+        <!-- 15. Write a js program to merge two array to third array. -->
         <H2>
-            Program # 15: <br><br> Write a js program to input basic salary of an employee and calculate its Gross salary according to following:
-            <pre>
-            Basic Salary <= 10000 : HRA = 20%, DA = 80%
-            Basic Salary <= 20000 : HRA = 25%, DA = 90%
-            Basic Salary > 20000 : HRA = 30%, DA = 95%</pre>
-
+            Program # 15: <br><br> Write a js program to merge two array to third array.
         </H2>
         <div id="jsProgramSection">
             <div id="userValue">
-                <form action="">
-                    <input id="q15Num1" type="number" placeholder="Enter Your Basic Salary"><br>
-
+                <h1>
+                   1st Current Array is: [41, 35, 24, 55, 755, 24];
+                    <br><br>
+                   2nd Current Array is: [81, 35, 28, 55, 75, 28];
+                </h1>
+                <form>
                     <input type="reset" onclick="q15ClearResultScreen()">
                 </form>
                 <H1 id="q15ResultScreen">
                     Result Screen
                 </H1>
             </div>
-            <button id="actionPerformBtn" onclick="findGrossSalary()">
+            <button id="actionPerformBtn" onclick="mergeElementsOfTwoArray()">
                 Action Perform
             </button>
         </div>
         <hr>
-        <!--16. Write a js program to input electricity unit charges and calculate total electricity bill according to the given condition:
-    For first 50 units Rs. 0.50/unit
-    For next 100 units Rs. 0.75/unit
-    For next 100 units Rs. 1.20/unit
-    For unit above 250 Rs. 1.50/unit
-    An additional surcharge of 20% is added to the bill
-    Deadline: 08/12/2021! -->
+        <!--16. Write a js program to find reverse of an array. -->
 
         <H2>
-            Program # 16: <br><br> Write a js program to input electricity unit charges and calculate total electricity bill according to the given condition:
-            <pre>
-            For first 50 units Rs. 0.50/unit
-            For next 100 units Rs. 0.75/unit
-            For next 100 units Rs. 1.20/unit
-            For unit above 250 Rs. 1.50/unit
-            An additional surcharge of 20% is added to the bill
-            Deadline: 08/12/2021!</pre>
+            Program # 16: <br><br> Write a js program to find reverse of an array.
         </H2>
         <div id="jsProgramSection">
             <div id="userValue">
+                <h1>
+                    The Current Array is: [41, 35, 24, 55, 755, 24];
+                </h1>
                 <form action="">
-                    <label for=""><b>Units :</b></label>
-                    <input id="q16Num1" type="number" placeholder="Enter Electricity Units"><br>
-
                     <input type="reset" onclick="q16ClearResultScreen()">
                 </form>
                 <H1 id="q16ResultScreen">
                     Result Screen
                 </H1>
             </div>
-            <button id="actionPerformBtn" onclick="findTotalElectricityBill()">
+            <button id="actionPerformBtn" onclick="findReverseOfArray()">
                 Action Perform
             </button>
         </div>
         <hr>
+
+         <!--17. Write a js program to put even and odd elements of array in two separate array. -->
+         <H2>
+            Program # 17: <br><br> Write a js program to put even and odd elements of array in two separate array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [41, 35, 24, 55, 755, 24];
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q16ClearResultScreen()">
+                </form>
+                <H1 id="q16ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findReverseOfArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+         <!--16. Write a js program to find reverse of an array. -->
+
+         <H2>
+            Program # 16: <br><br> Write a js program to find reverse of an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [41, 35, 24, 55, 755, 24];
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q16ClearResultScreen()">
+                </form>
+                <H1 id="q16ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findReverseOfArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+         <!--16. Write a js program to find reverse of an array. -->
+
+         <H2>
+            Program # 16: <br><br> Write a js program to find reverse of an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [41, 35, 24, 55, 755, 24];
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q16ClearResultScreen()">
+                </form>
+                <H1 id="q16ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findReverseOfArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+         <!--16. Write a js program to find reverse of an array. -->
+
+         <H2>
+            Program # 16: <br><br> Write a js program to find reverse of an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [41, 35, 24, 55, 755, 24];
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q16ClearResultScreen()">
+                </form>
+                <H1 id="q16ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findReverseOfArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+         <!--16. Write a js program to find reverse of an array. -->
+
+         <H2>
+            Program # 16: <br><br> Write a js program to find reverse of an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [41, 35, 24, 55, 755, 24];
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q16ClearResultScreen()">
+                </form>
+                <H1 id="q16ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findReverseOfArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+         <!--16. Write a js program to find reverse of an array. -->
+
+         <H2>
+            Program # 16: <br><br> Write a js program to find reverse of an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [41, 35, 24, 55, 755, 24];
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q16ClearResultScreen()">
+                </form>
+                <H1 id="q16ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findReverseOfArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        
     </div>
 
     <script src="./js/script.js"></script>

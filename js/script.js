@@ -199,3 +199,30 @@ function countTotalNumberOfDuplicateElements() {
     }
     document.getElementById("q13ResultScreen").innerHTML = "Total Number Of Duplicate Elements is: " + totalDuplicateElements;
 }
+// 14. Write a js program to delete all duplicate elements from an array.
+function deleteDuplicateElements() {
+    var numbers = [41, 35, 24, 55, 755, 24, 24, 210,41, 55, 35, 41];
+    for (let i = 0; i < numbers.length; i++) {
+        j =  i + 1
+        for ( j; j < numbers.length; j++) {
+            if (numbers[i] == numbers[j]) {
+                numbers.splice(j, 1);
+            }  
+        }
+    }
+    document.getElementById("q14ResultScreen").innerHTML = "After Deleted Duplicate Elements Array is: " + numbers;
+}
+// 15. Write a js program to merge two array to third array.
+function mergeElementsOfTwoArray() {
+    var numbers1 = [41, 35, 24, 55, 755, 24];
+    var numbers2 = [81, 35, 28, 55, 75, 28];
+    var mergeArray = [...numbers1 , ...numbers2];
+    document.getElementById("q15ResultScreen").innerHTML = "Merge Array is: " + mergeArray;
+}
+// 16. Write a js program to find reverse of an array.
+function findReverseOfArray() {
+    var numbers = [41, 35, 24, 55, 755, 24];
+    numbers.reverse()
+    document.getElementById("q16ResultScreen").innerHTML = "Merge Array is: " + numbers;
+}
+// 17. Write a js program to put even and odd elements of array in two separate array.
