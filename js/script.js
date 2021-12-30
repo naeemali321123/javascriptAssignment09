@@ -1,42 +1,34 @@
-// CLEAR RESULT SCREEN FUNCTIONS
+// CLEAR RESULT-SCREEN FUNCTIONS
 function q01ClearResultScreen() { document.getElementById("q01ResultScreen").innerHTML = " "; }
-
 function q02ClearResultScreen() { document.getElementById("q02ResultScreen").innerHTML = " "; }
-
 function q03ClearResultScreen() { document.getElementById("q03ResultScreen").innerHTML = "Result Screen "; }
-
 function q04ClearResultScreen() { document.getElementById("q04ResultScreen").innerHTML = "Result Screen "; }
-
 function q05ClearResultScreen() { document.getElementById("q05ResultScreen").innerHTML = "Result Screen "; }
-
 function q06ClearResultScreen() { document.getElementById("q06ResultScreen").innerHTML = "Result Screen "; }
-
 function q07ClearResultScreen() { document.getElementById("q07ResultScreen").innerHTML = "Result Screen "; }
-
 function q08ClearResultScreen() { document.getElementById("q08ResultScreen").innerHTML = "Result Screen "; }
-
 function q09ClearResultScreen() { document.getElementById("q09ResultScreen").innerHTML = "Result Screen "; }
-
 function q10ClearResultScreen() { document.getElementById("q10ResultScreen").innerHTML = "Result Screen "; }
-
 function q11ClearResultScreen() { document.getElementById("q11ResultScreen").innerHTML = "Result Screen "; }
-
 function q12ClearResultScreen() { document.getElementById("q12ResultScreen").innerHTML = "Result Screen "; }
-
-function q13ClearResultScreen() {
-    document.getElementById("grandTotal").innerHTML = "Null";
-    var x = document.getElementsByClassName("reset");
-    var i;
-    for (i = 0; i < x.length; i++) {
-        x[i].innerHTML = "Result"
-    }
-}
-
+function q13ClearResultScreen() { document.getElementById("q13ResultScreen").innerHTML = "Result Screen "; }
 function q14ClearResultScreen() { document.getElementById("q14ResultScreen").innerHTML = "Result Screen "; }
-
 function q15ClearResultScreen() { document.getElementById("q15ResultScreen").innerHTML = "Result Screen "; }
-
 function q16ClearResultScreen() { document.getElementById("q16ResultScreen").innerHTML = "Result Screen "; }
+function q17ClearResultScreen() { document.getElementById("q17ResultScreen").innerHTML = "Result Screen "; }
+function q18ClearResultScreen() { document.getElementById("q18ResultScreen").innerHTML = "Result Screen "; }
+function q19ClearResultScreen() { document.getElementById("q19ResultScreen").innerHTML = "Result Screen "; }
+function q20ClearResultScreen() { document.getElementById("q20ResultScreen").innerHTML = "Result Screen "; }
+function q21ClearResultScreen() { document.getElementById("q21ResultScreen").innerHTML = "Result Screen "; }
+function q22ClearResultScreen() { document.getElementById("q22ResultScreen").innerHTML = "Result Screen "; }
+function q23ClearResultScreen() { document.getElementById("q23ResultScreen").innerHTML = "Result Screen "; }
+function q24ClearResultScreen() { document.getElementById("q24ResultScreen").innerHTML = "Result Screen "; }
+function q25ClearResultScreen() { document.getElementById("q25ResultScreen").innerHTML = "Result Screen "; }
+function q26ClearResultScreen() { document.getElementById("q26ResultScreen").innerHTML = "Result Screen "; }
+function q27ClearResultScreen() { document.getElementById("q27ResultScreen").innerHTML = "Result Screen "; }
+function q28ClearResultScreen() { document.getElementById("q28ResultScreen").innerHTML = "Result Screen "; }
+function q29ClearResultScreen() { document.getElementById("q29ResultScreen").innerHTML = "Result Screen "; }
+function q30ClearResultScreen() { document.getElementById("q30ResultScreen").innerHTML = "Result Screen "; }
 
 // 01. Write a js program to read and print elements of array.
 
@@ -92,7 +84,7 @@ function findMinMaxValueInArray() {
 // 05. Write a js program to find second largest element in an array.
 function findSecondLargestElement() {
     var Numbers = [41, -222, 35, 24, 55, -26, 755, 28, -95, 210, 511, 212, 513, 214, 515];
-    Numbers.sort((a, b) => a - b );
+    Numbers.sort((a, b) => a - b);
     document.getElementById("q05ResultScreen").innerHTML = "Second Largest Number is: " + Numbers[Numbers.length - 2];
 }
 
@@ -159,8 +151,8 @@ function countFrequancyElements() {
     var userInput = parseInt(document.getElementById("q11Num1").value);
     var numbers = [41, 35, 24, 55, 755, 24, 210, 55, 35, 41];
     var count = 0;
-   numbers.forEach((item, index) => {
-        if(userInput == item){
+    numbers.forEach((item, index) => {
+        if (userInput == item) {
             count++
         }
     });
@@ -170,29 +162,29 @@ function countFrequancyElements() {
 function findUniqueElements() {
     var numbers = [41, 35, 24, 55, 755, 24, 210, 55, 35, 41];
     for (let i = 0; i < numbers.length; i++) {
-        j =  i + 1
-        for ( j; j < numbers.length; j++) {
+        j = i + 1
+        for (j; j < numbers.length; j++) {
             if (numbers[i] == numbers[j]) {
                 numbers.splice(j, 1)
-            }  
+            }
         }
     }
     document.getElementById("q12ResultScreen").innerHTML = "Unique Elements Array is: " + numbers;
 }
 // 13.Write a js program to count total number of duplicate elements in an array.
 function countTotalNumberOfDuplicateElements() {
-    var numbers = [41, 35, 24, 55, 755, 24, 24, 210,41, 55, 35, 41];
+    var numbers = [41, 35, 24, 55, 755, 24, 24, 210, 41, 55, 35, 41];
     totalDuplicateElements = 0;
     count = 0;
     for (let i = 0; i < numbers.length; i++) {
-        j =  i + 1
-        for ( j; j < numbers.length; j++) {
+        j = i + 1
+        for (j; j < numbers.length; j++) {
             if (numbers[i] == numbers[j]) {
                 numbers.splice(j, 1);
                 count++;
-            }  
+            }
         }
-        if(count > 0){
+        if (count > 0) {
             totalDuplicateElements++
             count = 0;
         }
@@ -201,13 +193,13 @@ function countTotalNumberOfDuplicateElements() {
 }
 // 14. Write a js program to delete all duplicate elements from an array.
 function deleteDuplicateElements() {
-    var numbers = [41, 35, 24, 55, 755, 24, 24, 210,41, 55, 35, 41];
+    var numbers = [41, 35, 24, 55, 755, 24, 24, 210, 41, 55, 35, 41];
     for (let i = 0; i < numbers.length; i++) {
-        j =  i + 1
-        for ( j; j < numbers.length; j++) {
+        j = i + 1
+        for (j; j < numbers.length; j++) {
             if (numbers[i] == numbers[j]) {
                 numbers.splice(j, 1);
-            }  
+            }
         }
     }
     document.getElementById("q14ResultScreen").innerHTML = "After Deleted Duplicate Elements Array is: " + numbers;
@@ -216,7 +208,7 @@ function deleteDuplicateElements() {
 function mergeElementsOfTwoArray() {
     var numbers1 = [41, 35, 24, 55, 755, 24];
     var numbers2 = [81, 35, 28, 55, 75, 28];
-    var mergeArray = [...numbers1 , ...numbers2];
+    var mergeArray = [...numbers1, ...numbers2];
     document.getElementById("q15ResultScreen").innerHTML = "Merge Array is: " + mergeArray;
 }
 // 16. Write a js program to find reverse of an array.
@@ -226,3 +218,33 @@ function findReverseOfArray() {
     document.getElementById("q16ResultScreen").innerHTML = "Merge Array is: " + numbers;
 }
 // 17. Write a js program to put even and odd elements of array in two separate array.
+function seprateOddAndEvenElement() {
+    var numbers = [41, 35, 24, 55, 755, 24, 32, 210, 41, 55, 35, 41];
+    var odd = [];
+    var even = [];
+    numbers.forEach(element => {
+        var filterItem = element % 2;
+        if (filterItem == 0) {
+            even.push(element)
+        }else{
+          odd.push(element)   
+        }
+    });
+    document.getElementById("q17ResultScreen").innerHTML = "Even Element Array is: " + even + " Odd Element Array is: " + odd;
+}
+// 18. Write a js program to search an element in an array.
+function searchAnElement() {
+    var numbers = ['41', '35', '24', '55', '755', '24', '32', '210', '41', '55', '35', '41'];
+    var userInput = document.getElementById("q18Num1").value;
+    if(userInput === ""){
+        var result = "Plz Enter Any Number"
+    }
+   for (let i = 0; i < numbers.length; i++) {
+    if (userInput == numbers[i]) {
+        var result = "This Element is Available that is: " + numbers[i];
+    }else{
+        var result = "This Elements Not Available in Array";
+    }       
+   }
+    document.getElementById("q18ResultScreen").innerHTML = result;
+}
