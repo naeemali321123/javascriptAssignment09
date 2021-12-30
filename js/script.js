@@ -226,25 +226,40 @@ function seprateOddAndEvenElement() {
         var filterItem = element % 2;
         if (filterItem == 0) {
             even.push(element)
-        }else{
-          odd.push(element)   
+        } else {
+            odd.push(element)
         }
     });
     document.getElementById("q17ResultScreen").innerHTML = "Even Element Array is: " + even + " Odd Element Array is: " + odd;
 }
 // 18. Write a js program to search an element in an array.
 function searchAnElement() {
-    var numbers = ['41', '35', '24', '55', '755', '24', '32', '210', '41', '55', '35', '41'];
-    var userInput = document.getElementById("q18Num1").value;
-    if(userInput === ""){
-        var result = "Plz Enter Any Number"
+    let numbers = ['41', '35', '24', '55', '755', '24', '32', '210', '41', '55', '35', '41'];
+    // let numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
+    userInput = document.getElementById("q18Num1").value;
+
+    // console.log(userInput)
+    var result;
+    if (!userInput) {
+        result = "Plz Enter Any Number"
+        return;
     }
-   for (let i = 0; i < numbers.length; i++) {
-    if (userInput == numbers[i]) {
-        var result = "This Element is Available that is: " + numbers[i];
-    }else{
-        var result = "This Elements Not Available in Array";
-    }       
-   }
+    // console.log(userInput)
+    let found = false;
+    for (let i = 0; i < numbers.length; i++) {
+        console.log(userInput)
+        if (userInput === numbers[i]) {
+            console.log(userInput)
+            result = "This Element is Available that is: " + numbers[i];
+            found = true;
+            break;
+        }
+    }
+
+    if (!found) {
+        result = "This Element is not Available.";
+    }
+
+
     document.getElementById("q18ResultScreen").innerHTML = result;
 }
