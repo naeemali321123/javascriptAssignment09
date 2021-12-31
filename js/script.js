@@ -278,3 +278,18 @@ function searchAnElement() {
     }
     document.getElementById("q18ResultScreen").innerHTML = result;
 }
+// 19. Write a js program to sort array elements in ascending or descending order.
+function sortedArray() {
+    let numbers = [41, 35, 24, 55, 755, 24];
+    numbers.sort((a, b) => b - a)
+    document.getElementById("q19ResultScreen").innerHTML =
+        `Sorrted Array in <b style="color: red"> Descending Order </b> is: given below<br>${numbers}`;
+}
+
+// 20. Write a js program to sort even and odd elements of array separately.
+function sortedArrayEvenAndOdd() {
+    let numbers = [41, 35, 24, 55, 755, 24];
+    numbers.sort((a, b) => a - a)
+    document.getElementById("q20ResultScreen").innerHTML =
+        `Sorrted Array in <b style="color: red"> Descending Order </b> is: given below<br>${numbers}`;
+}
