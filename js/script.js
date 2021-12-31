@@ -288,8 +288,44 @@ function sortedArray() {
 
 // 20. Write a js program to sort even and odd elements of array separately.
 function sortedArrayEvenAndOdd() {
-    let numbers = [41, 35, 24, 55, 755, 24];
-    numbers.sort((a, b) => a - a)
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    var found = false;
+    var odd = [];
+    var even = numbers.filter((item, index) => {
+        var evenAndOdd = item % 2;
+        if (evenAndOdd === 0) {
+            return item;
+        }
+        if (!found) {
+            odd.push(item)
+        }
+    })
+    even.sort((a, b) => b - a);
+    odd.sort((a, b) => a - b);
+    var evenAndOddArray = [...even, ...odd]
     document.getElementById("q20ResultScreen").innerHTML =
-        `Sorrted Array in <b style="color: red"> Descending Order </b> is: given below<br>${numbers}`;
+        `Even Elements is in <b style="color: red"> Descending Order </b> And <br>
+        Odd Element in <b style="color: red"> Ascending Order</b> Array is: given below <br><br>
+        ${evenAndOddArray}`;
 }
+// 21. Write a js program to left rotate an array.
+// function leftRotateArray() {
+//     var numbers = [1, 2, 3, 4, 5, 6, 7];
+//     for (let i = 0; i < numbers.length; i++) {
+//         const element = numbers[i];
+//         numbers.unshift(element.pop());
+//         numbers.push(element.shift());
+
+//     }
+//     document.getElementById("q21ResultScreen").innerHTML = `Rotated Array is: ${numbers}`;
+// }
+
+function leftRotateArray(arr, count) {
+    count -= arr.length * Math.floor(count / arr.length);
+    arr.push.apply(arr, arr.splice(0, count));
+    return arr;
+}
+for(let i = -6 ; i <= 6 ; i++) {
+    document.getElementById("q21ResultScreen").innerHTML = 
+    leftRotateArray(["🧡","💚","💙","💜","🖤"], i);
+  }
