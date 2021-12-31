@@ -1,33 +1,62 @@
 // CLEAR RESULT-SCREEN FUNCTIONS
 function q01ClearResultScreen() { document.getElementById("q01ResultScreen").innerHTML = " "; }
+
 function q02ClearResultScreen() { document.getElementById("q02ResultScreen").innerHTML = " "; }
+
 function q03ClearResultScreen() { document.getElementById("q03ResultScreen").innerHTML = "Result Screen "; }
+
 function q04ClearResultScreen() { document.getElementById("q04ResultScreen").innerHTML = "Result Screen "; }
+
 function q05ClearResultScreen() { document.getElementById("q05ResultScreen").innerHTML = "Result Screen "; }
+
 function q06ClearResultScreen() { document.getElementById("q06ResultScreen").innerHTML = "Result Screen "; }
+
 function q07ClearResultScreen() { document.getElementById("q07ResultScreen").innerHTML = "Result Screen "; }
+
 function q08ClearResultScreen() { document.getElementById("q08ResultScreen").innerHTML = "Result Screen "; }
+
 function q09ClearResultScreen() { document.getElementById("q09ResultScreen").innerHTML = "Result Screen "; }
+
 function q10ClearResultScreen() { document.getElementById("q10ResultScreen").innerHTML = "Result Screen "; }
+
 function q11ClearResultScreen() { document.getElementById("q11ResultScreen").innerHTML = "Result Screen "; }
+
 function q12ClearResultScreen() { document.getElementById("q12ResultScreen").innerHTML = "Result Screen "; }
+
 function q13ClearResultScreen() { document.getElementById("q13ResultScreen").innerHTML = "Result Screen "; }
+
 function q14ClearResultScreen() { document.getElementById("q14ResultScreen").innerHTML = "Result Screen "; }
+
 function q15ClearResultScreen() { document.getElementById("q15ResultScreen").innerHTML = "Result Screen "; }
+
 function q16ClearResultScreen() { document.getElementById("q16ResultScreen").innerHTML = "Result Screen "; }
+
 function q17ClearResultScreen() { document.getElementById("q17ResultScreen").innerHTML = "Result Screen "; }
+
 function q18ClearResultScreen() { document.getElementById("q18ResultScreen").innerHTML = "Result Screen "; }
+
 function q19ClearResultScreen() { document.getElementById("q19ResultScreen").innerHTML = "Result Screen "; }
+
 function q20ClearResultScreen() { document.getElementById("q20ResultScreen").innerHTML = "Result Screen "; }
+
 function q21ClearResultScreen() { document.getElementById("q21ResultScreen").innerHTML = "Result Screen "; }
+
 function q22ClearResultScreen() { document.getElementById("q22ResultScreen").innerHTML = "Result Screen "; }
+
 function q23ClearResultScreen() { document.getElementById("q23ResultScreen").innerHTML = "Result Screen "; }
+
 function q24ClearResultScreen() { document.getElementById("q24ResultScreen").innerHTML = "Result Screen "; }
+
 function q25ClearResultScreen() { document.getElementById("q25ResultScreen").innerHTML = "Result Screen "; }
+
 function q26ClearResultScreen() { document.getElementById("q26ResultScreen").innerHTML = "Result Screen "; }
+
 function q27ClearResultScreen() { document.getElementById("q27ResultScreen").innerHTML = "Result Screen "; }
+
 function q28ClearResultScreen() { document.getElementById("q28ResultScreen").innerHTML = "Result Screen "; }
+
 function q29ClearResultScreen() { document.getElementById("q29ResultScreen").innerHTML = "Result Screen "; }
+
 function q30ClearResultScreen() { document.getElementById("q30ResultScreen").innerHTML = "Result Screen "; }
 
 // 01. Write a js program to read and print elements of array.
@@ -100,8 +129,7 @@ function findEvenAndOdenNumbers() {
         if (evenAndOden == 0) {
             evenNumberArray[even] = Numbers[i]
             even++
-        }
-        else {
+        } else {
             oddNumberArray[odd] = Numbers[i]
             odd++
         }
@@ -235,31 +263,18 @@ function seprateOddAndEvenElement() {
 // 18. Write a js program to search an element in an array.
 function searchAnElement() {
     let numbers = ['41', '35', '24', '55', '755', '24', '32', '210', '41', '55', '35', '41'];
-    // let numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
-    userInput = document.getElementById("q18Num1").value;
-
-    // console.log(userInput)
+    var userInput = document.getElementById("q18Num1").value;
     var result;
-    if (!userInput) {
-        result = "Plz Enter Any Number"
-        return;
-    }
-    // console.log(userInput)
     let found = false;
     for (let i = 0; i < numbers.length; i++) {
-        console.log(userInput)
         if (userInput === numbers[i]) {
-            console.log(userInput)
             result = "This Element is Available that is: " + numbers[i];
             found = true;
             break;
         }
     }
-
     if (!found) {
         result = "This Element is not Available.";
     }
-
-
     document.getElementById("q18ResultScreen").innerHTML = result;
 }
