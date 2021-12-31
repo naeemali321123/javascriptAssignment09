@@ -309,23 +309,29 @@ function sortedArrayEvenAndOdd() {
         ${evenAndOddArray}`;
 }
 // 21. Write a js program to left rotate an array.
-// function leftRotateArray() {
-//     var numbers = [1, 2, 3, 4, 5, 6, 7];
-//     for (let i = 0; i < numbers.length; i++) {
-//         const element = numbers[i];
-//         numbers.unshift(element.pop());
-//         numbers.push(element.shift());
-
-//     }
-//     document.getElementById("q21ResultScreen").innerHTML = `Rotated Array is: ${numbers}`;
-// }
-
-function leftRotateArray(arr, count) {
-    count -= arr.length * Math.floor(count / arr.length);
-    arr.push.apply(arr, arr.splice(0, count));
-    return arr;
+function leftRotateArray() {
+    var number = ['⤜', '💔', '♥', '❤', '⯁'];
+    number.forEach((item, index) => {
+        number.unshift(number.pop())
+        document.getElementById("q21ResultScreen").innerHTML += "<br>" +
+            number;
+    })
 }
-for(let i = -6 ; i <= 6 ; i++) {
-    document.getElementById("q21ResultScreen").innerHTML = 
-    leftRotateArray(["🧡","💚","💙","💜","🖤"], i);
-  }
+// 22. Write a js program to right rotate an array.
+function rightRotateArray() {
+    var number = ['⤜', '💔', '♥', '❤', '⯁'];
+    number.forEach((item, index) => {
+        number.push(number.shift())
+        document.getElementById("q22ResultScreen").innerHTML += "<br>" +
+            number;
+    })
+}
+// 23. Write a js program to print day of week name using switch case.
+function weekDayName() {
+    var weekDay = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    weekDay.forEach((item, index) => {
+        number.push(number.shift())
+        document.getElementById("q23ResultScreen").innerHTML += "<br>" +
+            weekDay;
+    })
+}
