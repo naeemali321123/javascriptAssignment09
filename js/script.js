@@ -328,10 +328,34 @@ function rightRotateArray() {
 }
 // 23. Write a js program to print day of week name using switch case.
 function weekDayName() {
-    var weekDay = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    weekDay.forEach((item, index) => {
-        number.push(number.shift())
-        document.getElementById("q23ResultScreen").innerHTML += "<br>" +
-            weekDay;
-    })
+    var userInput = parseInt(document.getElementById("q23Num1").value);
+    switch (userInput) {
+
+        case 0:
+            result = "Sunday"
+            break;
+        case 1:
+            result = "Monday"
+            break;
+        case 2:
+            result = "Tuesday"
+            break;
+        case 3:
+            result = "Wednesday"
+            break;
+        case 4:
+            result = "Thursday"
+            break;
+        case 5:
+            result = "Friday"
+            break;
+        case 6:
+            result = "Saturday"
+            break;
+
+        default:
+            result = "Plz Type Correct No."
+            break;
+    }
+    document.getElementById("q23ResultScreen").innerHTML = result;
 }
