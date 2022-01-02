@@ -359,3 +359,62 @@ function weekDayName() {
     }
     document.getElementById("q23ResultScreen").innerHTML = result;
 }
+// 24. Write a js program print total number of days in a month using switch case.
+function totalDaysOfMonth() {
+    var userInput = document.querySelector(`#dropDown`).value;
+    var result;
+    switch (userInput) {
+        case 'January': case 'March': case 'May': case 'July': case 'August': case 'October': case 'December':
+
+            result = "31 Days in " + userInput;
+            break;
+
+        case 'Febuary': case 'April': case 'June': case 'Setember': case 'November':
+            
+        result = "30 Days in " + userInput;
+            break;
+    }
+    document.getElementById("q24ResultScreen").innerHTML = result;
+}
+// 25. Write a js program to check whether an alphabet is vowel or consonant using switch case.
+function checkAlphabetBySwithCase() {
+    var userInput = document.querySelector(`#q25Num1`).value;
+    var result;
+    switch (userInput) {
+        case 'a': case 'e': case 'i': case 'o': case 'u': case 'A': case 'E': case 'I': case 'O': case 'U':
+
+            result = "This Chracter is: Vowel"
+            break;
+
+        case 'b': case 'c': case 'd': case 'f': case 'g': case 'h': case 'j': case 'k': case 'l': case 'm': case 'n': case 'p': case 'q': case 'r': case 's': case 't': case 'v': case 'w': case 'x': case 'y': case 'z': case 'B': case 'C': case 'D': case 'F': case 'G': case 'J': case 'K': case 'L': case 'M': case 'N': case 'P': case 'Q': case 'S': case 'T': case 'V': case 'X': case 'Z': case 'H': case 'R': case 'W': case 'Y':
+
+            result = "This Chracter is: Consonant"
+            break;
+
+        default:
+            result = "Plz Type Any Chracter"
+            break;
+    }
+    document.getElementById("q25ResultScreen").innerHTML = result;
+}
+// 26. Write a js program to find maximum between two numbers using switch case.
+function maxNumberInTwo() {
+    var num1 = parseInt(document.querySelector(`#q26Num1`).value);
+    var num2 = parseInt(document.querySelector(`#q26Num2`).value);
+    var result;
+    switch (num1 > num2) {
+        case true:
+        // case num1 > num2:
+            result = 'Your First Value is Max that is: ' + num1;
+            break;
+        case false:
+            result = 'Your Second Value is Max that is: ' + num2;
+            break;
+        default:
+            result = 'Plz Type Any Number';
+            break;
+    }
+    document.getElementById("q26ResultScreen").innerHTML = result;
+}
+// 27. Write a js program to create Simple Calculator using switch case.
+

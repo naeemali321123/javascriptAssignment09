@@ -15,7 +15,7 @@
 #container {
     text-align: center;
     padding: 0px;
-    background: linear-gradient(to right, aqua, pink);
+    background: linear-gradient(to right, rgb(93, 224, 181), rgb(36, 223, 145));
 }
 
 #container>h1 {
@@ -110,4 +110,7 @@
     font-size: 24px;
     padding: 10px 0px;
 
+}
+#dropDown{
+    font-size: 24px;
 }
