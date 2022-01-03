@@ -515,42 +515,18 @@ function checkPositiveAndNegative() {
     document.getElementById("q28ResultScreen").innerHTML = result;
 }
 // 29. Write a js program to find roots of a quadratic equation using switch case.
-function checkPositiveAndNegative() {
-    var num1 = parseInt(document.querySelector(`#q29num1`).value);
-    var result;
-    switch (!num1) {
-        case true:
-            result = 'Plz Type Any Number'
-            break;
-        case false:
-            switch (num1 < 0) {
-                case true:
-                    result = 'Your Type Number is Negative ' + num1;
-                    break;
-                case false:
-                    result = 'Your Type Number is Positive ' + num1;
-            }
-    }
-    document.getElementById("q29ResultScreen").innerHTML = result;
+function rootsOfQuadraticEquation() {
+    var a = document.querySelector(`#q29num1`).value;
+    var b = document.querySelector(`#q29num2`).value;
+    var c = document.querySelector(`#q29num3`).value;
+    var rootPart = math.sqrt(b * b - 4 * a * c);
+    var denom = 2 * a;
+    var root1 = (-b + rootPart) / denom;
+    var root2 = (-b - rootPart) / denom;
+
+    document.getElementById("q29ResultScreen").innerHTML = "1st Root " + root1 + "<br />" + "2st Root " + root2;
 }
 // 30. Write a js program to create Simple Calculator using switch case.
-function checkPositiveAndNegative() {
-    var num1 = parseInt(document.querySelector(`#q30num1`).value);
-    var result;
-    switch (!num1) {
-        case true:
-            result = 'Plz Type Any Number'
-            break;
-        case false:
-            switch (num1 < 0) {
-                case true:
-                    result = 'Your Type Number is Negative ' + num1;
-                    break;
-                case false:
-                    result = 'Your Type Number is Positive ' + num1;
-            }
-    }
-    document.getElementById("q30ResultScreen").innerHTML = result;
-}
+
 
 // complete Assignments
