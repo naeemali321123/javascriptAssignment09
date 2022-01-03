@@ -364,14 +364,24 @@ function totalDaysOfMonth() {
     var userInput = document.querySelector(`#dropDown`).value;
     var result;
     switch (userInput) {
-        case 'January': case 'March': case 'May': case 'July': case 'August': case 'October': case 'December':
+        case 'January':
+        case 'March':
+        case 'May':
+        case 'July':
+        case 'August':
+        case 'October':
+        case 'December':
 
             result = "31 Days in " + userInput;
             break;
 
-        case 'Febuary': case 'April': case 'June': case 'Setember': case 'November':
-            
-        result = "30 Days in " + userInput;
+        case 'Febuary':
+        case 'April':
+        case 'June':
+        case 'Setember':
+        case 'November':
+
+            result = "30 Days in " + userInput;
             break;
     }
     document.getElementById("q24ResultScreen").innerHTML = result;
@@ -381,12 +391,62 @@ function checkAlphabetBySwithCase() {
     var userInput = document.querySelector(`#q25Num1`).value;
     var result;
     switch (userInput) {
-        case 'a': case 'e': case 'i': case 'o': case 'u': case 'A': case 'E': case 'I': case 'O': case 'U':
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        case 'A':
+        case 'E':
+        case 'I':
+        case 'O':
+        case 'U':
 
             result = "This Chracter is: Vowel"
             break;
 
-        case 'b': case 'c': case 'd': case 'f': case 'g': case 'h': case 'j': case 'k': case 'l': case 'm': case 'n': case 'p': case 'q': case 'r': case 's': case 't': case 'v': case 'w': case 'x': case 'y': case 'z': case 'B': case 'C': case 'D': case 'F': case 'G': case 'J': case 'K': case 'L': case 'M': case 'N': case 'P': case 'Q': case 'S': case 'T': case 'V': case 'X': case 'Z': case 'H': case 'R': case 'W': case 'Y':
+        case 'b':
+        case 'c':
+        case 'd':
+        case 'f':
+        case 'g':
+        case 'h':
+        case 'j':
+        case 'k':
+        case 'l':
+        case 'm':
+        case 'n':
+        case 'p':
+        case 'q':
+        case 'r':
+        case 's':
+        case 't':
+        case 'v':
+        case 'w':
+        case 'x':
+        case 'y':
+        case 'z':
+        case 'B':
+        case 'C':
+        case 'D':
+        case 'F':
+        case 'G':
+        case 'J':
+        case 'K':
+        case 'L':
+        case 'M':
+        case 'N':
+        case 'P':
+        case 'Q':
+        case 'S':
+        case 'T':
+        case 'V':
+        case 'X':
+        case 'Z':
+        case 'H':
+        case 'R':
+        case 'W':
+        case 'Y':
 
             result = "This Chracter is: Consonant"
             break;
@@ -404,7 +464,7 @@ function maxNumberInTwo() {
     var result;
     switch (num1 > num2) {
         case true:
-        // case num1 > num2:
+            // case num1 > num2:
             result = 'Your First Value is Max that is: ' + num1;
             break;
         case false:
@@ -416,5 +476,81 @@ function maxNumberInTwo() {
     }
     document.getElementById("q26ResultScreen").innerHTML = result;
 }
-// 27. Write a js program to create Simple Calculator using switch case.
+// 27. Write a js program to check whether a number is even or odd using switch case.    
+function CheckEvenAndOdd() {
+    var num1 = parseInt(document.querySelector(`#q27num1`).value);
+    var result;
+    switch (!num1) {
+        case true:
+            result = 'Plz Type Any Number'
+            break;
+        case false:
+            switch (num1 % 2 == 0) {
+                case true:
+                    result = 'Your Type Number is Even ' + num1;
+                    break;
+                case false:
+                    result = 'Your Type Number is Odd ' + num1;
+            }
+    }
+    document.getElementById("q27ResultScreen").innerHTML = result;
+}
+// 28. Write a js program to check whether a number is positive, negative or zero using switch case.
+function checkPositiveAndNegative() {
+    var num1 = parseInt(document.querySelector(`#q28num1`).value);
+    var result;
+    switch (!num1) {
+        case true:
+            result = 'Plz Type Any Number'
+            break;
+        case false:
+            switch (num1 < 0) {
+                case true:
+                    result = 'Your Type Number is Negative ' + num1;
+                    break;
+                case false:
+                    result = 'Your Type Number is Positive ' + num1;
+            }
+    }
+    document.getElementById("q28ResultScreen").innerHTML = result;
+}
+// 29. Write a js program to find roots of a quadratic equation using switch case.
+function checkPositiveAndNegative() {
+    var num1 = parseInt(document.querySelector(`#q29num1`).value);
+    var result;
+    switch (!num1) {
+        case true:
+            result = 'Plz Type Any Number'
+            break;
+        case false:
+            switch (num1 < 0) {
+                case true:
+                    result = 'Your Type Number is Negative ' + num1;
+                    break;
+                case false:
+                    result = 'Your Type Number is Positive ' + num1;
+            }
+    }
+    document.getElementById("q29ResultScreen").innerHTML = result;
+}
+// 30. Write a js program to create Simple Calculator using switch case.
+function checkPositiveAndNegative() {
+    var num1 = parseInt(document.querySelector(`#q30num1`).value);
+    var result;
+    switch (!num1) {
+        case true:
+            result = 'Plz Type Any Number'
+            break;
+        case false:
+            switch (num1 < 0) {
+                case true:
+                    result = 'Your Type Number is Negative ' + num1;
+                    break;
+                case false:
+                    result = 'Your Type Number is Positive ' + num1;
+            }
+    }
+    document.getElementById("q30ResultScreen").innerHTML = result;
+}
 
+// complete Assignments
