@@ -519,14 +519,39 @@ function rootsOfQuadraticEquation() {
     var a = document.querySelector(`#q29num1`).value;
     var b = document.querySelector(`#q29num2`).value;
     var c = document.querySelector(`#q29num3`).value;
-    var rootPart = math.sqrt(b * b - 4 * a * c);
-    var denom = 2 * a;
-    var root1 = (-b + rootPart) / denom;
-    var root2 = (-b - rootPart) / denom;
+    var root1 = (-b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
+    var root2 = (-b - Math.sqrt(b * b - 4 * a * c)) / (2 * a);
 
-    document.getElementById("q29ResultScreen").innerHTML = "1st Root " + root1 + "<br />" + "2st Root " + root2;
+    document.getElementById("q29ResultScreen").innerHTML = "Root One is " + root1 + "<br> Root Two is " + root2;
 }
 // 30. Write a js program to create Simple Calculator using switch case.
+function simpleCalculate() {
+    let result;
+    const number1 = document.getElementById("q30num1").value;
+    const number2 = document.getElementById("q30num2").value;
+    const operator = document.getElementById("q30num3").value;
 
+    switch (operator) {
+        case '+':
+            result = parseInt(number1) + parseInt(number2);
+            break;
 
-// complete Assignments
+        case '-':
+            result = number1 - number2;
+            break;
+
+        case '*':
+            result = number1 * number2;
+            break;
+
+        case '/':
+            result = number1 / number2;
+            break;
+
+        default:
+            result = 'Invalid operator';
+            break;
+    }
+
+    document.getElementById("q30ResultScreen").innerHTML = "RESULT IS: " + number1 + " " + operator + " "+ number2 + " = " + result;
+}
